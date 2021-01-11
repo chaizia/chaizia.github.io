@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Gridea 一个简单、开源、强大的静态博客写作客户端 | Gridea</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://chaizi.top/favicon.ico?v=1610383859472">
+<link rel="stylesheet" href="https://chaizi.top/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="##前言
+想当时，在博客兴起的年代，成千上万的人挑选各种平台去搭建一个属于自己的博客。
+从新浪博客、博客园到 WordPress、Hexo，而现在越来越多的人选择了静态博客，越来越趋于轻量化
+ 博主还曾用过一款名叫 里程密 的开源博客程序，..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://chaizi.top">
+        <img src="https://chaizi.top/images/avatar.png?v=1610383859472" class="site-logo">
+        <h1 class="site-title">Gridea</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://chaizi.top/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Gridea 一个简单、开源、强大的静态博客写作客户端</h2>
+            <div class="post-date">2021-01-12</div>
+            
+            <div class="post-content" v-pre>
+              <p>##前言<br>
+想当时，在博客兴起的年代，成千上万的人挑选各种平台去搭建一个属于自己的博客。</p>
+<p>从新浪博客、博客园到 WordPress、Hexo，而现在越来越多的人选择了静态博客，越来越趋于轻量化</p>
+<pre><code> 博主还曾用过一款名叫 里程密 的开源博客程序，它是我的第一个所使用博客程序，可惜作者忙于工作，已经许久不更新
+</code></pre>
+<p>##介绍<br>
+##Gridea</p>
+<p>##Gridea（旧称 Hve Notes）是一个静态博客写作客户端 (A static blog writing client) ，你可以用它来记录你的生活、心情、知识、笔记、创意等。配合 github账号你可以搭建一个静态页面的博客，界面简洁美观，写作推送非常的方便，非常适合小白。</p>
+<p>#Gridea的官网：https://gridea.dev/</p>
+<pre><code>静态页面：网页的代码都在页面中，不需要执行asp，php，.net等程序生成客户端网页代码的网页。
+</code></pre>
+<p>特性<br>
+Markdown<br>
+Gridea 提供了 Markdown 编辑体验，你可以专注内容，其他的，交给 Gridea 就够了，无需关心样式与排版。</p>
+<p>封面图<br>
+一篇用心的创作，怎么能不搭配一个封面图来锦上添花呢？有！Gridea 支持文章设置封面图，即使是外链图也不成问题。</p>
+<p>自定义标签<br>
+我们更建议使用标签来为文章进行归类，以你最喜欢的方式：编程、旅行、读书笔记... 我们并没有同时提供标签和类别两层分类关系，画繁为简，不必纠结。</p>
+<p>自定义菜单<br>
+我们开发了自定义菜单功能，同时贴心地准备了主页、归档、标签列表等快捷选择。当然，你也可以创建外部菜单到互联网的任何一个地方。</p>
+<p>多主题<br>
+目前，我们内置了 4 款主题，制作精良、耐看，更有趣的是，我们为每款主题设置了丰富的自定义配置字段，稍加配置，遇见大不同</p>
+<p>跨设备<br>
+或许你工作使用 Mac，生活使用 Windows，这都不是事儿，Gridea 全都支持！同时支持更改源文件夹，利用 OneDrive、Dropbox 等同步工具，跨设备管理博客轻而易举！什么，你喜欢用 Linux？再等等，稍后就来</p>
+<p>多平台<br>
+大部分情况下你用 Github Pages 来托管博客就够了，但我们同时提供了 Coding Pages 的支持。若你想部署在自己的服务器，可将构建后的网站上传到任意地方。我想，未来会将这一过程变得更加流畅</p>
+<p>多评论<br>
+Gridea 内置了 Gitalk 和 Disqus 两个评论系统，你可以任选其一，利用评论结交更多朋友吧！</p>
+<p>多语言<br>
+是的，我们贴心地为你内置了中文简体和 English 两种语言。</p>
+<p>多平台部署<br>
+支持多平台 Mac / Win / Linux ，界面优雅</p>
+<p>当然 Gridea 还很年轻，有很多不足的地方，但请相信，它会不停向前。未来，它一定会成为爱创作的你离不开的伙伴。<br>
+使用<br>
+由于搭建过程网上已经有许多，这里博主就不演示了</p>
+<p>这里给出一篇博主认为写的不错的</p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://chaizi.top/post/hello-gridea/">
+                  <h3 class="post-title">
+                    Hello Gridea
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>
