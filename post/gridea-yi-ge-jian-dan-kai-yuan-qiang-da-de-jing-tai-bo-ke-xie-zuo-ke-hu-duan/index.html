@@ -1,103 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset="utf-8" >
-
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Gridea 一个简单、开源、强大的静态博客写作客户端 | Gridea</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://chaizi.top/favicon.ico?v=1610383859472">
-<link rel="stylesheet" href="https://chaizi.top/styles/main.css">
-
-
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
-
-
+<meta name="referrer" content="never" />
+<link rel="shortcut icon" href="https://chaizi.top/favicon.ico">
+<link rel="stylesheet" type="text/css" href="https://chaizi.top/styles/main.css">
     <meta name="description" content="##前言
 想当时，在博客兴起的年代，成千上万的人挑选各种平台去搭建一个属于自己的博客。
 从新浪博客、博客园到 WordPress、Hexo，而现在越来越多的人选择了静态博客，越来越趋于轻量化
  博主还曾用过一款名叫 里程密 的开源博客程序，..." />
-    <meta name="keywords" content="" />
+    
+    
+    
+    <link rel="prefetch" href="https://chaizi.top/post/hello-gridea/">
+    
   </head>
   <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://chaizi.top">
-        <img src="https://chaizi.top/images/avatar.png?v=1610383859472" class="site-logo">
-        <h1 class="site-title">Gridea</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
-    </div>
-    <div>
+    <!-- start: #wrapper -->
+    <header id="header" style="">
+        <div class="header-container">
+  <h1 class="site-title"><a href="https://chaizi.top">Gridea</a></h1>
+  <h2 class="site-description">温故而知新</h2>
+  <nav class="main-navigation">
+    <ul id="" class="">
       
-        
-          <a href="/" class="site-nav">
-            首页
-          </a>
-        
+      <li class="" ><a href="/" class="menu">首页</a></li>
       
-        
-          <a href="/archives" class="site-nav">
-            归档
-          </a>
-        
+      <li class="" ><a href="/archives" class="menu">归档</a></li>
       
-        
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
+      <li class="" ><a href="/tags" class="menu">标签</a></li>
       
-        
-          <a href="/post/about" class="site-nav">
-            关于
-          </a>
-        
+      <li class="" ><a href="/post/about" class="menu">关于</a></li>
       
-    </div>
-  </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
+    </ul>
+  </nav>
+  <div class="my_socials">
+    
       
-        
+      <a href="https://twitter.com/chaizi" class="translate-effect" target="_blank"><i class="fa fa-twitter"></i></a>
       
-        
+    
       
-        
+    
       
-        
+      <a href="https://weibo.com/chaizi" class="translate-effect" target="_blank"><i class="fa fa-weibo"></i></a>
       
-        
+    
       
-    </div>
-    <div class="site-description">
-      温故而知新
-    </div>
-    <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://chaizi.top/atom.xml" target="_blank">RSS</a>
-    </div>
+    
+      
+      <a href="https://github.com/chaizia" class="translate-effect" target="_blank"><i class="fa fa-github"></i></a>
+      
+    
+      
+    
+      
+    
   </div>
 </div>
-
-
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">Gridea 一个简单、开源、强大的静态博客写作客户端</h2>
-            <div class="post-date">2021-01-12</div>
+    </header>
+    <div class="wrapper single">
+        <div class="content">
+            <div id="posts" class="posts">
+            <!-- start: .articles -->
             
-            <div class="post-content" v-pre>
-              <p>##前言<br>
+            <article class="post hentry format-daily format-">
+                <header>
+                    <time class="date">
+                        <i class="fa">
+                            <span class="datetime">2021-01-12</span>
+                        </i>
+                    </time>
+                </header>
+                <h1 class="entry-title">
+                    Gridea 一个简单、开源、强大的静态博客写作客户端
+                </h1>
+                <div class="post-content">
+                    <div class="post-hentry">
+                        <p>##前言<br>
 想当时，在博客兴起的年代，成千上万的人挑选各种平台去搭建一个属于自己的博客。</p>
 <p>从新浪博客、博客园到 WordPress、Hexo，而现在越来越多的人选择了静态博客，越来越趋于轻量化</p>
 <pre><code> 博主还曾用过一款名叫 里程密 的开源博客程序，它是我的第一个所使用博客程序，可惜作者忙于工作，已经许久不更新
@@ -134,43 +116,56 @@ Gridea 内置了 Gitalk 和 Disqus 两个评论系统，你可以任选其一，
 由于搭建过程网上已经有许多，这里博主就不演示了</p>
 <p>这里给出一篇博主认为写的不错的</p>
 
-            </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </article>
             
+
+                <div class="pager">
+                    
+                        <span class="prev">已是最新一篇</span>
+                    
+                    
+                         <a class="next" href="https://chaizi.top/post/hello-gridea/">Hello Gridea</a>
+                    
+                    <div class="clear"></div>
+                </div>
+
             
-              <div class="next-post">
-                <div class="next">下一篇</div>
-                <a href="https://chaizi.top/post/hello-gridea/">
-                  <h3 class="post-title">
-                    Hello Gridea
-                  </h3>
-                </a>
+              <div id="comments">
+                <p>请到客户端“主题--自定义配置--valine”中填入ID和KEY</p>
               </div>
+              <div class="clear"></div>
             
-
             
-
-          </div>
+            </div>
 
         </div>
-      </div>
+
+            <footer id="footer" class="">
+        <p class="published border-effect">
+          ©2020 共 3 篇文章
+          <br/>
+          Theme <a href="https://immmmm.com/gridea-theme-motify/" target="_blank">「Motify」</a> Powered by <a href="https://gridea.dev/" target="_blank">「Gridea」</a>
+        </p>
+    </footer>
+
+    <a id="back_to_top" href="#" class="back_to_top"><span>△</span></a>
+
+
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.19.0/prism.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/gh/chaizia/chaizia.github.io/media/js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/chaizia/chaizia.github.io/media/js/lately.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/chaizia/chaizia.github.io/media/js/waterfall.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/chaizia/chaizia.github.io/media/js/slimbox2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/chaizia/chaizia.github.io/media/js/functions.js"></script>
+
+
+<script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
     </div>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
-
-AOS.init();
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
-
-</script>
-
-
-
 
 
 

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chaizi.top</id>
     <title>Gridea</title>
-    <updated>2021-01-11T16:51:03.210Z</updated>
+    <updated>2021-01-14T14:48:17.710Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chaizi.top"/>
     <link rel="self" href="https://chaizi.top/atom.xml"/>
@@ -16,43 +16,6 @@
         <link href="https://chaizi.top/post/gridea-yi-ge-jian-dan-kai-yuan-qiang-da-de-jing-tai-bo-ke-xie-zuo-ke-hu-duan/">
         </link>
         <updated>2021-01-11T16:49:59.000Z</updated>
-        <content type="html"><![CDATA[<p>##前言<br>
-想当时，在博客兴起的年代，成千上万的人挑选各种平台去搭建一个属于自己的博客。</p>
-<p>从新浪博客、博客园到 WordPress、Hexo，而现在越来越多的人选择了静态博客，越来越趋于轻量化</p>
-<pre><code> 博主还曾用过一款名叫 里程密 的开源博客程序，它是我的第一个所使用博客程序，可惜作者忙于工作，已经许久不更新
-</code></pre>
-<p>##介绍<br>
-##Gridea</p>
-<p>##Gridea（旧称 Hve Notes）是一个静态博客写作客户端 (A static blog writing client) ，你可以用它来记录你的生活、心情、知识、笔记、创意等。配合 github账号你可以搭建一个静态页面的博客，界面简洁美观，写作推送非常的方便，非常适合小白。</p>
-<p>#Gridea的官网：https://gridea.dev/</p>
-<pre><code>静态页面：网页的代码都在页面中，不需要执行asp，php，.net等程序生成客户端网页代码的网页。
-</code></pre>
-<p>特性<br>
-Markdown<br>
-Gridea 提供了 Markdown 编辑体验，你可以专注内容，其他的，交给 Gridea 就够了，无需关心样式与排版。</p>
-<p>封面图<br>
-一篇用心的创作，怎么能不搭配一个封面图来锦上添花呢？有！Gridea 支持文章设置封面图，即使是外链图也不成问题。</p>
-<p>自定义标签<br>
-我们更建议使用标签来为文章进行归类，以你最喜欢的方式：编程、旅行、读书笔记... 我们并没有同时提供标签和类别两层分类关系，画繁为简，不必纠结。</p>
-<p>自定义菜单<br>
-我们开发了自定义菜单功能，同时贴心地准备了主页、归档、标签列表等快捷选择。当然，你也可以创建外部菜单到互联网的任何一个地方。</p>
-<p>多主题<br>
-目前，我们内置了 4 款主题，制作精良、耐看，更有趣的是，我们为每款主题设置了丰富的自定义配置字段，稍加配置，遇见大不同</p>
-<p>跨设备<br>
-或许你工作使用 Mac，生活使用 Windows，这都不是事儿，Gridea 全都支持！同时支持更改源文件夹，利用 OneDrive、Dropbox 等同步工具，跨设备管理博客轻而易举！什么，你喜欢用 Linux？再等等，稍后就来</p>
-<p>多平台<br>
-大部分情况下你用 Github Pages 来托管博客就够了，但我们同时提供了 Coding Pages 的支持。若你想部署在自己的服务器，可将构建后的网站上传到任意地方。我想，未来会将这一过程变得更加流畅</p>
-<p>多评论<br>
-Gridea 内置了 Gitalk 和 Disqus 两个评论系统，你可以任选其一，利用评论结交更多朋友吧！</p>
-<p>多语言<br>
-是的，我们贴心地为你内置了中文简体和 English 两种语言。</p>
-<p>多平台部署<br>
-支持多平台 Mac / Win / Linux ，界面优雅</p>
-<p>当然 Gridea 还很年轻，有很多不足的地方，但请相信，它会不停向前。未来，它一定会成为爱创作的你离不开的伙伴。<br>
-使用<br>
-由于搭建过程网上已经有许多，这里博主就不演示了</p>
-<p>这里给出一篇博主认为写的不错的</p>
-]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
@@ -65,25 +28,6 @@ Gridea 内置了 Gitalk 和 Disqus 两个评论系统，你可以任选其一，
 ]]></summary>
         <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
 ✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
 ]]></content>
     </entry>
 </feed>
