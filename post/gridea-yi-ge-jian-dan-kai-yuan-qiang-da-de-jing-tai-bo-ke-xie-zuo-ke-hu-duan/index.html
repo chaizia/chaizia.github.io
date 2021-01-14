@@ -7,10 +7,9 @@
 <meta name="referrer" content="never" />
 <link rel="shortcut icon" href="https://chaizi.top/favicon.ico">
 <link rel="stylesheet" type="text/css" href="https://chaizi.top/styles/main.css">
-    <meta name="description" content="##前言
-想当时，在博客兴起的年代，成千上万的人挑选各种平台去搭建一个属于自己的博客。
-从新浪博客、博客园到 WordPress、Hexo，而现在越来越多的人选择了静态博客，越来越趋于轻量化
- 博主还曾用过一款名叫 里程密 的开源博客程序，..." />
+    <meta name="description" content="最近在做网站备案，临时搬到wiki主机处，他家的虚拟主机空间有点限制，然后就搜了一下现在有没有什么靠谱的图床之类的可以加加速也避免被限制，然后就发现有人早就打上了GitHub的主意，仔细看了看，十分值得推荐。
+##原理
+　　GitHub给开..." />
     
     <script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
     
@@ -81,12 +80,23 @@
                 </h1>
                 <div class="post-content">
                     <div class="post-hentry">
-                        <p>##前言<br>
-想当时，在博客兴起的年代，成千上万的人挑选各种平台去搭建一个属于自己的博客。</p>
-<p>从新浪博客、博客园到 WordPress、Hexo，而现在越来越多的人选择了静态博客，越来越趋于轻量化</p>
-<pre><code> 博主还曾用过一款名叫 里程密 的开源博客程序，它是我的第一个所使用博客程序，可惜作者忙于工作，已经许久不更新
+                        <p>最近在做网站备案，临时搬到wiki主机处，他家的虚拟主机空间有点限制，然后就搜了一下现在有没有什么靠谱的图床之类的可以加加速也避免被限制，然后就发现有人早就打上了GitHub的主意，仔细看了看，十分值得推荐。</p>
+<p>##原理<br>
+　　GitHub给开发者提供无限制的免费私有存储库，这首先就解决掉了图床的存储问题，但是GitHub在国内无法正常访问，于是再借用jsdelivr的免费CDN加速（有国内节点），于是一个高速访问无限制的图床诞生了。但是这依然不够完美，地址转换也比较麻烦，于是<a href="https://github.com/MliKiowa/GitStatic">乔千</a>大佬写了一个插件“GitStatic”，可以在typecho中上传附件，文件直接传到GitHub，然后转换成jsdelivr加速过的链接直接在文章内引用。</p>
+<p>##效果</p>
+<figure data-type="image" tabindex="1"><img src="https://cdn.jsdelivr.net/gh/chaizia/chaizime/usr/uploads/2020/12/2420287568.png" alt="效果" loading="lazy"></figure>
+<p>##方法<br>
+　　1. 教程太多了，随便找一个大家看吧。这里不再详述。<a href="https://zhuanlan.zhihu.com/p/133331451">点击查看教程</a><br>
+　　2. 原作者更新的2.0 alpha 版加入了整站加速的内容，一般来说不需要，直接用其1.2版。<br>
+　　2. 敲黑板，<strong>考点</strong>：在我搬到wiki主机处时，发现插件无法正常加载，经过排查，发现原作者有一处写法不够规范，修改后问题解决。涉及到的文件有<strong>GitHelper.php</strong>和<strong>Plugin.php</strong>，这两个文件用文本打开：</p>
+<pre><code class="language-PHP">第1行原文
+&lt;?
+直接修改成如下即可
+&lt;?php
 </code></pre>
-<figure data-type="image" tabindex="1"><img src="https://cdn.jsdelivr.net/gh/chaizia/mypic/img20210111183225.jpg" alt="" loading="lazy"></figure>
+<p>附：已经修改好的GitStatic1.2：<br>
+　　<a href="https://cdn.jsdelivr.net/gh/chaizia/chaizime/GitStatic-modify.zip">点击下载</a><br>
+　　<a href="https://github.com/chaizia/GitStatic">fork仓库</a></p>
 
                         <div class="clear"></div>
                     </div>
