@@ -12,6 +12,8 @@
 从新浪博客、博客园到 WordPress、Hexo，而现在越来越多的人选择了静态博客，越来越趋于轻量化
  博主还曾用过一款名叫 里程密 的开源博客程序，..." />
     
+    <script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+    
     
     
     <link rel="prefetch" href="https://chaizi.top/post/hello-gridea/">
@@ -103,7 +105,8 @@ Gridea 提供了 Markdown 编辑体验，你可以专注内容，其他的，交
 目前，我们内置了 4 款主题，制作精良、耐看，更有趣的是，我们为每款主题设置了丰富的自定义配置字段，稍加配置，遇见大不同</p>
 <p>跨设备<br>
 或许你工作使用 Mac，生活使用 Windows，这都不是事儿，Gridea 全都支持！同时支持更改源文件夹，利用 OneDrive、Dropbox 等同步工具，跨设备管理博客轻而易举！什么，你喜欢用 Linux？再等等，稍后就来</p>
-<p>多平台<br>
+<p><img src="https://chaizi.top/post-images/1610636500496.jpg" alt="" loading="lazy"><br>
+多平台<br>
 大部分情况下你用 Github Pages 来托管博客就够了，但我们同时提供了 Coding Pages 的支持。若你想部署在自己的服务器，可将构建后的网站上传到任意地方。我想，未来会将这一过程变得更加流畅</p>
 <p>多评论<br>
 Gridea 内置了 Gitalk 和 Disqus 两个评论系统，你可以任选其一，利用评论结交更多朋友吧！</p>
@@ -133,9 +136,7 @@ Gridea 内置了 Gitalk 和 Disqus 两个评论系统，你可以任选其一，
                 </div>
 
             
-              <div id="comments">
-                <p>请到客户端“主题--自定义配置--valine”中填入ID和KEY</p>
-              </div>
+              <div id="comments"></div>
               <div class="clear"></div>
             
             
@@ -167,6 +168,38 @@ Gridea 内置了 Gitalk 和 Disqus 两个评论系统，你可以任选其一，
 <script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
     </div>
 
+
+<script src="https://cdn.staticfile.org/valine/1.3.10/Valine.Pure.min.js"></script>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js"></script>
+<script>
+    jQuery(document).ready(function($){
+            new Valine({
+                el: '#comments',
+                recordIP:true,
+                appId: 'GzhoMKjUpoFoz5EpXnTIUezN-gzGzoHsz' ,
+                appKey: '7Yoej7yqYJDUlJYOmymwGggo',
+                pageSize: 30,
+                placeholder:'既然来了，那就留个痕迹吧~'
+            })
+            jinrishici.load(function(result) {
+                var jrsc_plac =  result.data.content + "\n「" + result.data.origin.title + "」" + result.data.origin.dynasty + " · " + result.data.origin.author
+                    document.getElementById("veditor").setAttribute("placeholder",jrsc_plac);
+            });
+            $('.vemoji-btn').text('😀');
+            $("#comments").on('click', 'span.vat',function(){
+                        $(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap"));
+                        $('textarea#veditor').focus();
+            })
+            if(window.location.hash){
+                    var checkExist = setInterval(function() {
+                        if ($(window.location.hash).length) {
+                            $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
+                            clearInterval(checkExist);
+                        }
+                    }, 100);
+            }
+    });
+</script>
 
 
   </body>
